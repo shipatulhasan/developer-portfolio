@@ -18,8 +18,9 @@
 }
 .col-2{
     flex-basis: 48%;
+    max-width: 48%;
     /* flex-grow: 1; */
-    align-self: center;
+    /* align-self: center; */
 }
 
 .tomato-color{
@@ -67,6 +68,9 @@ h6{
     min-height: 600px;
     
 }
+.hero .col-2{
+    align-self: center;
+}
 .hero-banner {
     background-image:url("../img/top-banner.png");
     background-repeat: no-repeat;
@@ -86,6 +90,7 @@ h6{
 .about-banner{
     background: #f8f8f8 no-repeat url("../img/exp-bg-flip.png");
     background-position: top right;
+    /* background-size: contain; */
     padding: 120px 0;
     
 }
@@ -112,6 +117,7 @@ h6{
 .experience-banner{
     background: no-repeat url("../img/dream-bg-flip.png");
     background-position: top left;
+    /* background-size: contain; */
     padding: 120px 0;
 }
 .experience h1{
@@ -121,7 +127,7 @@ h6{
 /*experice card design */
 .card{
     padding: 30px 25px;
-    min-height: 300px;
+    /* min-height: 300px; */
     box-shadow: 0px 0px 20px -5px rgba(145, 145, 145, 0.377);
     border-radius: 10px;
 }
