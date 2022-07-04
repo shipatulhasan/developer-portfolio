@@ -12,8 +12,8 @@
 .row{
     display: flex;
     flex-flow: wrap row;
-    align-items: center; 
-    justify-content: space-evenly;
+    align-items: stretch; 
+    justify-content: space-between;
     
 }
 .col-2{
@@ -22,11 +22,15 @@
     align-self: center;
 }
 
+.tomato-color{
+    color: #FA735C;
+}
+
 .btn {
     padding: 15px 35px;
     text-decoration: none;
     text-align: center;
-    background-color: #FF705D;
+    background-color: #FA735C;
     color: #fff;
     border: none;
     border-radius: 30px;
@@ -40,29 +44,36 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
+h1{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5em;
+}
+h6{
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    
+}
+
 
 /** hero section**/
 .row.hero{
     min-height: 600px;
     
 }
-.hero h1{
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 1.3;
-}
-.hero span{
-    color: #FF705D;
+.hero-banner {
+    background-image:url("/img/top-banner.png");
+    background-repeat: no-repeat;
+    background-attachment: cover;  
 }
 .hero h6{
-    font-size: 18px;
-    letter-spacing: 2px;
-    line-height: 1.5;
     padding: 20px 0 10px;
-}
-.hero p{
-    font-size: 16px;
-    line-height: 1.5em;
 }
 
 .hero img{
@@ -70,3 +81,63 @@
     object-fit: contain;
 }
 /** hero end**/
+
+/* About me */
+.about-banner{
+    background: #f8f8f8 no-repeat url("/img/exp-bg-flip.png");
+    background-position: top right;
+    padding: 120px 0;
+    
+}
+.about-content{
+    text-align: center;
+    width: 800px;
+}
+.about span{
+    color: #FA735C;
+}
+.about p span{
+    font-weight: 700;
+    font-style: italic;
+}
+.about h1{
+    padding: 0 0 20px;
+}
+
+/* Experience section */
+
+.experience{
+    padding: 120px 0;
+}
+.experience-banner{
+    background: no-repeat url("/img/dream-bg-flip.png");
+    background-position: top left;
+    padding: 120px 0;
+}
+.experience h1{
+    text-align: center;
+    padding: 0 0 60px;
+}
+/*experice card design */
+.card{
+    padding: 30px 25px;
+    min-height: 300px;
+    box-shadow: 0px 0px 20px -5px rgba(145, 145, 145, 0.377);
+    border-radius: 10px;
+}
+.card-head{
+    padding: 0 0 20px;
+}
+.card.border-tomato{
+    border-left:7px solid tomato;
+}
+.card.border-yellow{
+    border-left:7px solid #FFA654;
+}
+
+/* Footer style */
+footer{
+    padding: 40px;
+    background: #f8f8f8;
+    text-align: center;
+}
