@@ -68,9 +68,9 @@ h6{
     
 }
 .hero-banner {
-    background-image:url("/img/top-banner.png");
+    background-image:url("../img/top-banner.png");
     background-repeat: no-repeat;
-    background-attachment: cover;  
+    background-size: cover;  
 }
 .hero h6{
     padding: 20px 0 10px;
@@ -84,7 +84,7 @@ h6{
 
 /* About me */
 .about-banner{
-    background: #f8f8f8 no-repeat url("/img/exp-bg-flip.png");
+    background: #f8f8f8 no-repeat url("../img/exp-bg-flip.png");
     background-position: top right;
     padding: 120px 0;
     
@@ -110,7 +110,7 @@ h6{
     padding: 120px 0;
 }
 .experience-banner{
-    background: no-repeat url("/img/dream-bg-flip.png");
+    background: no-repeat url("../img/dream-bg-flip.png");
     background-position: top left;
     padding: 120px 0;
 }
