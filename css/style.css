@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center; 
+    justify-content: space-evenly;
+    
+}
+.col-2{
+    flex-basis: 48%;
+    /* flex-grow: 1; */
+    align-self: center;
+}
+
+/** hero section**/
+.row.hero{
+    min-height: 600px;
+    
+}
+.hero h1{
+
+    font-size: 45px;
+    font-weight: 700;
+}
+.hero h6{
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+    padding: 0 0 20px;
+}
+
+
+
+/** hero img**/
+.hero img{
+    width: 100%;
+    object-fit: contain;
+}
