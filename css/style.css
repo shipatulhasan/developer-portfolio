@@ -7,6 +7,7 @@
 .container{
     width: 1180px;
     max-width: 100%;
+    padding: 0 15px;
     margin: 0 auto;
 }
 /* my color */
@@ -51,6 +52,7 @@ max-width: 30%;
 }
 img{
     width: 100%;
+    max-width: 100%;
 }
 a{
     padding: 15px 35px;
@@ -84,7 +86,7 @@ p{
 }
 h6{
     font-size: 18px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     line-height: 1.5;
     
 }
@@ -109,6 +111,7 @@ h6{
 
 .hero img{
     width: 100%;
+    max-width: 100%;
     object-fit: contain;
 }
 /** hero end**/
@@ -118,12 +121,17 @@ h6{
     background: #f8f8f8 no-repeat url("../img/exp-bg-flip.png");
     background-position: top right;
     /* background-size: contain; */
-    padding: 120px 0;
+    
+}
+.about{
+    padding: 100px 0;
+    text-align: center;
     
 }
 .about-content{
-    text-align: center;
     width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 .about span{
     color: #FA735C;
@@ -139,7 +147,7 @@ h6{
 /* Experience section */
 
 .experience{
-    padding: 120px 0;
+    padding: 100px 0;
 }
 .experience-banner{
     background: no-repeat url("../img/dream-bg-flip.png");
@@ -170,7 +178,7 @@ h6{
     background: #f8f8f8 no-repeat url("../img/exp-bg-flip.png");
     background-position: top right;
     /* background-size: contain; */
-    padding: 120px 0;
+    padding: 100px 0;
     
 }
 .projects img{
@@ -184,15 +192,15 @@ h6{
 }
 
 .items {
-    flex-basis: 15%;
+    flex-basis: 22%;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 20px;
     margin: 10px 10px 0 0;
-    padding: 2px 5px;
+    padding: 2px 8px;
     box-shadow: 0px 0px 10px -1px rgb(186 181 181 / 50%);
 }
 .items h3{
-    font-size: 16px;
+    font-size: 14px;
     color: whitesmoke;
 
 }
@@ -202,4 +210,89 @@ footer{
     padding: 40px;
     background: #f8f8f8;
     text-align: center;
+}
+
+/* Responsive design */
+@media(max-width:992px){
+
+    h1{
+        font-size: 35px;
+    }
+    .container{
+        padding: 60px 15px;
+    }
+    .about, .projects, .experience{
+        padding: 0;
+    }
+    .about-content{
+        width: 700px;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(245, 245, 245, 0.575);
+    }
+
+
+}
+@media(max-width:768px){
+    .headline{
+        padding: 0 0 50px;
+    }
+    .projects .row, .experience .row{
+        justify-content: space-evenly;
+    }
+}
+@media(max-width:600px){
+    .container{
+        padding: 50px 20px;
+    }
+    .col-2{
+        flex-basis: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+    .col-3{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .hero-banner{
+        background-position: center;
+    }
+    .hero.row{
+        flex-flow: wrap column-reverse;
+        justify-content: center;
+        
+    }
+    
+    .hero .figure{
+        text-align: center;
+    }
+    .hero img{
+        width: 80%;
+        max-width: 100%;
+    }
+    .experience-banner{
+        background-position: bottom left;
+    }
+    .about-banner{
+        background-position: bottom right;
+    }
+    .about-content{
+        width: 600px;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(245, 245, 245, 0.575);
+    }
+    .projects{
+        background-position: bottom right;
+    }
+    .projects .row {
+        justify-content: center;
+    }
+    .card{
+        margin: 10px 0;
+    }
+   
+
 }
