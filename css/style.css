@@ -218,8 +218,8 @@ h6{
 
 /* Footer style */
 footer{
-    padding: 20px 20px;
-    margin: 0 20px;
+    padding: 30px 20px;
+    margin: 0 40px;
     background: #fff;
     text-align: center;
     border-top:1px solid #ff5757 ;
@@ -252,6 +252,9 @@ footer{
     .container {
         padding: 60px 25px;
     }
+	p{
+	font-size:13px;
+	}
     .col-2{
         flex-basis: 100%;
         max-width: 100%;
