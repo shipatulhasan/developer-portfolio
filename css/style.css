@@ -260,6 +260,9 @@ footer{
     .container{
         padding: 50px 20px;
     }
+	p{
+	font-size:13px;
+	}
     .col-2{
         flex-basis: 100%;
         max-width: 100%;
