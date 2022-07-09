@@ -239,9 +239,9 @@ footer{
         padding: 0;
     }
     .about-content{
-        width: 700px;
+        width: 800px;
         max-width: 100%;
-        padding: 20px;
+        padding: 12px;
         border-radius: 10px;
         background: rgba(245, 245, 245, 0.575);
     }
@@ -249,16 +249,8 @@ footer{
 
 }
 @media(max-width:768px){
-    .headline{
-        padding: 0 0 50px;
-    }
-    .projects .row, .experience .row{
-        justify-content: space-evenly;
-    }
-}
-@media(max-width:600px){
-    .container{
-        padding: 50px 20px;
+    .container {
+        padding: 60px 25px;
     }
     .col-2{
         flex-basis: 100%;
@@ -269,21 +261,42 @@ footer{
         flex-basis: 100%;
         max-width: 100%;
     }
-    .hero-banner{
-        background-position: center;
+    .headline{
+        padding: 0 0 50px;
+    }
+    .projects .row, .experience .row{
+        justify-content: space-evenly;
+    }
+    .hero .figure{
+        text-align: center;
     }
     .hero.row{
         flex-flow: wrap column-reverse;
         justify-content: center;
         
     }
-    
-    .hero .figure{
-        text-align: center;
+    .hero-banner{
+        background-position: center;
     }
     .hero img{
         width: 80%;
         max-width: 100%;
+    }
+    .card{
+        margin: 10px 0;
+    }
+    .items {
+        flex-basis: 15%;
+        text-align: center;
+    }
+   
+}
+@media(max-width:600px){
+    .container{
+        padding: 50px 20px;
+    }
+    p{
+        font-size: 14px;
     }
     .experience-banner{
         background-position: bottom left;
@@ -291,17 +304,18 @@ footer{
     .about-banner{
         background-position: bottom right;
     }
-    .about-content{
-        width: 600px;
-    }
+    .about-content p{
+        text-align: justify;
+        }
     .projects{
         background-position: bottom right;
     }
     .projects .row {
         justify-content: center;
     }
-    .card{
-        margin: 10px 0;
+    .items {
+        flex-basis: 22%;
+        text-align: center;
     }
     footer{
         margin: 0 5px;
