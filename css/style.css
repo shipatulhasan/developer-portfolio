@@ -218,11 +218,13 @@ h6{
 
 /* Footer style */
 footer{
-    padding: 40px;
+    padding: 20px 20px;
+    margin: 0 20px;
     background: #fff;
     text-align: center;
     border-top:1px solid #ff5757 ;
 }
+
 
 /* Responsive design */
 @media(max-width:992px){
@@ -291,10 +293,6 @@ footer{
     }
     .about-content{
         width: 600px;
-        max-width: 100%;
-        padding: 20px;
-        border-radius: 10px;
-        background: rgba(245, 245, 245, 0.575);
     }
     .projects{
         background-position: bottom right;
@@ -304,6 +302,9 @@ footer{
     }
     .card{
         margin: 10px 0;
+    }
+    footer{
+        margin: 0 5px;
     }
    
 
