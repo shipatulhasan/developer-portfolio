@@ -52,6 +52,7 @@ max-width: 30%;
     background: #FFD342;
     background: linear-gradient(to right, #FFD342 0%, #FF1616 92%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     
 
