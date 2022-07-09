@@ -245,7 +245,7 @@ footer{
         justify-content: space-between;
     }
     .container{
-        padding: 60px 20px;
+        padding: 60px 25px;
     }
     .experience .row,.hero.row{
         justify-content: space-evenly;
@@ -281,7 +281,7 @@ footer{
 }
 @media(max-width:775px){
     .container {
-        padding: 60px 25px;
+        padding: 60px 23px;
     }
     h1{
         font-size: 35px;
