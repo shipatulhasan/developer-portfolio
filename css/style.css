@@ -232,6 +232,12 @@ footer{
     h1{
         font-size: 30px;
     }
+    h2{
+        font-size: 18px;
+    }
+    h6{
+        font-size: 13px;
+    }
     p{
         font-size: 14px;
     }
@@ -241,10 +247,10 @@ footer{
     .container{
         padding: 60px 10px;
     }
-    .col-2{
+    /* .col-2{
         flex-basis: 45%;
         max-width: 45%;
-    }
+    } */
     .col-3{
         flex-basis: 45%;
         max-width: 45%;
@@ -274,9 +280,15 @@ footer{
     .container {
         padding: 60px 25px;
     }
-	p{
-	font-size:13px;
-	}
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h6{
+        font-size: 16px;
+    }
     .col-2{
         flex-basis: 100%;
         max-width: 100%;
@@ -294,6 +306,9 @@ footer{
     }
     .hero .figure{
         text-align: center;
+    }
+    .hero p{
+        display: block;
     }
     .hero.row{
         flex-flow: wrap column-reverse;
@@ -319,9 +334,6 @@ footer{
 @media(max-width:600px){
     .container{
         padding: 50px 20px;
-    }
-    p{
-        font-size: 14px;
     }
     .experience-banner{
         background-position: bottom left;
