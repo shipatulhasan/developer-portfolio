@@ -293,10 +293,11 @@ footer{
     }
     .about-content{
         width: 600px;
-        padding: 5px;
+        padding: 10px;
     }
     .about-content p{
         font-size:13px;
+        text-align:justify;
     }
     .projects{
         background-position: bottom right;
