@@ -254,6 +254,9 @@ footer{
     .hero{
         min-height: 400px;
     }
+    .hero p{
+        display: none;
+    }
     .about, .projects, .experience{
         padding: 0;
     }
