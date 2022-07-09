@@ -5,10 +5,29 @@
     font-family: 'Poppins',sans-serif;
 }
 .container{
-    width: 1100px;
+    width: 1180px;
+    max-width: 100%;
     margin: 0 auto;
 }
+/* my color */
+:root{
+    --purpole:#7C2AE8;
+    --blue:#00C4CC;
+    --pink:#FF2160;
+    --baby-pink:#ff5797;
+    --red:#ff5757;
+    --lite-pink:#ff9191;
+}
 
+.blue-bg{
+    background-image: linear-gradient(45deg,var(--purpole),var(--blue));
+}
+.pink-bg{
+    background-image: linear-gradient(45deg,var(--pink),var(--baby-pink));
+}
+.orange-bg{
+    background-image: linear-gradient(45deg,var(--red),var(--lite-pink));
+}
 .row{
     display: flex;
     flex-flow: wrap row;
@@ -22,20 +41,20 @@
     /* flex-grow: 1; */
     /* align-self: center; */
 }
+.col-3{
+flex-basis: 30%;
+max-width: 30%;
+}
 
 .tomato-color{
     color: #FA735C;
 }
-
-.btn {
-    margin: 30px 0 0 0;
+img{
+    width: 100%;
 }
-.btn a{
+a{
     padding: 15px 35px;
-    text-decoration: none;
     text-align: center;
-    background-color: #FA735C;
-    color: #fff;
     border: none;
     border-radius: 30px;
     text-decoration: none;
@@ -44,6 +63,14 @@
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.btn {
+    margin: 30px 0 10px;
+}
+.headline{
+    text-align: center;
+    padding: 0 0 80px;
 }
 h1{
     font-size: 45px;
@@ -120,14 +147,12 @@ h6{
     /* background-size: contain; */
     padding: 120px 0;
 }
-.experience h1{
-    text-align: center;
-    padding: 0 0 60px;
-}
+
 /*experice card design */
 .card{
     padding: 30px 25px;
     /* min-height: 300px; */
+    background-color: #fff;
     box-shadow: 0px 0px 40px -1px rgb(186 181 181 / 50%);
     border-radius: 10px;
 }
@@ -139,6 +164,37 @@ h6{
 }
 .card.border-yellow{
     border-left:7px solid #FFA654;
+}
+/* projects */
+.projects{
+    background: #f8f8f8 no-repeat url("../img/exp-bg-flip.png");
+    background-position: top right;
+    /* background-size: contain; */
+    padding: 120px 0;
+    
+}
+.projects img{
+    border-radius: 10px;
+}
+.language{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-start;
+    padding: 0 0 20px;
+}
+
+.items {
+    flex-basis: 20%;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px 10px 0 0;
+    padding: 2px 18px;
+    box-shadow: 0px 0px 10px -1px rgb(186 181 181 / 50%);
+}
+.items h3{
+    font-size: 16px;
+    color: whitesmoke;
+
 }
 
 /* Footer style */
