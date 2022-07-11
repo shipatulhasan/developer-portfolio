@@ -43,13 +43,13 @@ body{
 }
 .col-2{
     flex-basis: 48%;
-    /* max-width: 48%; */
+    max-width: 48%;
     /* flex-grow: 1; */
-    /* align-self: center; */
+    align-self: center;
 }
 .col-3{
 flex-basis: 30%;
-/* max-width: 30%; */
+max-width: 30%;
 }
 .gradiant-text{
     background: #FFD342;
@@ -233,7 +233,7 @@ footer{
 @media(max-width:992px){
 
     h1{
-        font-size: 35px;
+        font-size: 34px;
     }
     h2{
         font-size: 18px;
@@ -254,8 +254,9 @@ footer{
         justify-content: space-evenly;
     }
     .experience .col-2{
-        flex-basis: 100%;
-        margin: 10px 0;
+        flex-basis: 70%;
+        max-width:70%;
+        margin: 20px 0;
     }
     .hero{
         min-height: 400px;
@@ -277,18 +278,20 @@ footer{
 
 }
 @media(max-width:800px){
+    .experience .col-2{
+        flex-basis: 80%;
+        max-width:80%;
+
+    }
     .col-3{
         flex-basis: 48%;
-        /* max-width: 45%; */
-        margin: 10px 0;
+        max-width: 48%;
+        margin: 20px 0;
     }
 }
-@media(max-width:775px){
+@media(max-width:768px){
     .container {
-        padding: 60px 23px;
-    }
-    h1{
-        font-size: 35px;
+        padding: 60px 20px;
     }
     h2{
         font-size: 20px;
@@ -298,7 +301,13 @@ footer{
     }
     .col-2{
         flex-basis: 100%;
+        max-width: 100%;
         align-items: center;
+    }
+    .experience .col-2{
+        flex-basis: 100%;
+        max-width:100%;
+
     }
    
     .headline{
@@ -340,6 +349,7 @@ footer{
     }
     .col-3{
         flex-basis: 60%;
+        max-width: 60%;
     }
     .experience-banner{
         background-position: bottom left;
@@ -370,5 +380,6 @@ footer{
 
      .col-3{
         flex-basis: 80%;
+        max-width: 80%;
     }
 }
