@@ -311,7 +311,7 @@ footer{
     .headline{
         padding: 0 0 50px;
     }
-    .projects .row, .experience .row{
+    .experience .row{
         justify-content: space-evenly;
     }
     .hero .figure{
