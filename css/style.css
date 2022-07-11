@@ -44,8 +44,6 @@ body{
 .col-2{
     flex-basis: 48%;
     max-width: 48%;
-    /* flex-grow: 1; */
-    align-self: center;
 }
 .col-3{
 flex-basis: 30%;
