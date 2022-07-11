@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
+bodyU{
+    background: #fff;
+}
 .container{
     width: 1180px;
     max-width: 100%;
@@ -254,12 +257,6 @@ footer{
         flex-basis: 100%;
         margin: 10px 0;
     }
-    .col-3{
-        flex-basis: 48%;
-        /* max-width: 45%; */
-        margin: 10px 0;
-    }
-    
     .hero{
         min-height: 400px;
     }
@@ -278,6 +275,13 @@ footer{
     }
 
 
+}
+@media(max-width:800px){
+    .col-3{
+        flex-basis: 48%;
+        /* max-width: 45%; */
+        margin: 10px 0;
+    }
 }
 @media(max-width:775px){
     .container {
@@ -335,7 +339,7 @@ footer{
         padding: 50px 20px;
     }
     .col-3{
-        flex-basis: 100%;
+        flex-basis: 60%;
     }
     .experience-banner{
         background-position: bottom left;
@@ -361,4 +365,10 @@ footer{
     }
    
 
+}
+@media (max-width:468px) {
+
+     .col-3{
+        flex-basis: 80%;
+    }
 }
