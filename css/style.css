@@ -245,6 +245,11 @@ footer{
     .row{
         justify-content: space-between;
     }
+    .col-3{
+        flex-basis: 48%;
+        max-width: 48%;
+        margin: 20px 0;
+    }
     .container{
         padding: 60px 25px;
     }
@@ -280,11 +285,6 @@ footer{
         flex-basis: 80%;
         max-width:80%;
 
-    }
-    .col-3{
-        flex-basis: 48%;
-        max-width: 48%;
-        margin: 20px 0;
     }
 }
 @media(max-width:768px){
@@ -346,8 +346,8 @@ footer{
         padding: 50px 20px;
     }
     .col-3{
-        flex-basis: 60%;
-        max-width: 60%;
+        flex-basis: 70%;
+        max-width: 70%;
     }
     .experience-banner{
         background-position: bottom left;
