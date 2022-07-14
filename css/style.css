@@ -8,7 +8,7 @@ body{
     background: #fff;
 }
 .container{
-    width: 1180px;
+    width: 1200px;
     max-width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -109,7 +109,7 @@ h6{
 
 /** hero section**/
 .hero{
-    min-height: 600px;
+    min-height: 100vh;
     
 }
 .hero .col-2{
