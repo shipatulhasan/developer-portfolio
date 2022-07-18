@@ -16,23 +16,29 @@ body{
 /* my color */
 :root{
     --purpole:#7C2AE8;
-    --blue:#00C4CC;
+    --sky:#00C4CC;
     --pink:#FF2160;
     --baby-pink:#ff5797;
     --orange:#ff5757;
-    --lite-pink:#ff9191;
+    --light-pink:#ff9191;
     --baby-red:#ff1616;
     --yellow:#ffde59;
+    --light-violet:#B09DFF;
+    --violet:#562EFF;
+    
 }
 
 .blue-bg{
-    background-image: linear-gradient(45deg,var(--purpole),var(--blue));
+    background-image: linear-gradient(45deg,var(--purpole),var(--sky));
 }
 .pink-bg{
     background-image: linear-gradient(45deg,var(--pink),var(--baby-pink));
 }
 .orange-bg{
     background-image: linear-gradient(45deg,var(--baby-red),var(--yellow));
+}
+.violet-bg{
+    background-image: linear-gradient(45deg,var(--violet),var(--light-violet));
 }
 .row{
     display: flex;
@@ -84,7 +90,7 @@ a{
 }
 .headline{
     text-align: center;
-    padding: 0 0 80px;
+    padding: 0 0 60px;
 }
 h1{
     font-size: 45px;
@@ -193,6 +199,7 @@ h2{
     border-left:7px solid #FFA654;
 }
 /* projects */
+
 .projects{
     background: #f8f8f8 no-repeat url("../img/exp-bg-flip.png");
     background-position: top right;
@@ -255,7 +262,7 @@ footer{
     .col-3{
         flex-basis: 48%;
         max-width: 48%;
-        margin: 20px 0;
+        margin: 15px 0;
     }
     .container{
         padding: 60px 25px;
