@@ -116,9 +116,6 @@ h6{
     font-size: 14px;
     /* letter-spacing: 2px; */
     line-height: 1.5;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     
 }
 
@@ -326,9 +323,12 @@ footer{
         border-radius: 10px;
         background: rgba(245, 245, 245, 0.575);
     }
+    .projects .card-head h2{
+        font-size: 18px;
+    }
     .projects .btn a {
         padding: 5px 10px;
-        font-size: 13px;
+        font-size: 10px;
     }
 
 
