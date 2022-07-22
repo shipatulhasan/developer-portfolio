@@ -109,11 +109,11 @@ h2{
     }
 
 p{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5em;
 }
 h6{
-    font-size: 18px;
+    font-size: 14px;
     /* letter-spacing: 2px; */
     line-height: 1.5;
     white-space: nowrap;
@@ -196,11 +196,11 @@ h6{
     box-shadow: 0px 0px 40px -1px rgb(186 181 181 / 50%);
     border-radius: 10px;
 }
-h2{
-     font-size: 25px;
+.card-head {
+    padding: 20px 0;
 }
-.card-head{
-    padding: 0 0 20px;
+.card-head h2 {
+    font-size: 20px;
 }
 .card.border-tomato{
     border-left:7px solid tomato;
@@ -217,6 +217,9 @@ h2{
     padding: 100px 0;
     
 }
+.portfolio .container{
+    max-width: 1000px;
+}
 .projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -225,14 +228,24 @@ h2{
 .projects .card{
     margin: 0;
 }
+.projects .btn a{
+    padding: 8px 16px;
+    font-size: 13px;
+}
+.projects .card-head h2{
+    font-size: 18px;
+}
+.projects p{
+    font-size: 13px;
+}
 .card img{
     border-radius: 10px;
 }
-.language{
+.language {
     display: flex;
     flex-flow: wrap row;
     justify-content: flex-start;
-    padding: 0 0 20px;
+    /* padding: 0 0 20px; */
 }
 
 .items {
@@ -244,7 +257,7 @@ h2{
     box-shadow: 0px 0px 10px -1px rgb(186 181 181 / 50%);
 }
 .items h3{
-    font-size: 14px;
+    font-size: 13px;
     color: whitesmoke;
 
 }
@@ -260,6 +273,13 @@ footer{
 
 
 /* Responsive design */
+@media (max-width:1200px) {
+    .hero{
+        min-height: 600px;
+        
+    }
+    
+}
 @media(max-width:992px){
 
     h1{
@@ -277,11 +297,6 @@ footer{
     .row{
         justify-content: space-between;
     }
-    .col-3{
-        flex-basis: 48%;
-        max-width: 48%;
-        margin: 15px 0;
-    }
     .container{
         padding: 60px 25px;
     }
@@ -297,7 +312,9 @@ footer{
         min-height: 400px;
     }
     .hero p{
-        display: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .about, .portfolio, .experience{
         padding: 0;
@@ -308,6 +325,10 @@ footer{
         padding: 12px;
         border-radius: 10px;
         background: rgba(245, 245, 245, 0.575);
+    }
+    .projects .btn a {
+        padding: 5px 10px;
+        font-size: 13px;
     }
 
 
@@ -354,7 +375,9 @@ footer{
         text-align: center;
     }
     .hero p{
-        display: block;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: normal;
     }
     .hero.row{
         flex-flow: wrap column-reverse;
@@ -381,10 +404,6 @@ footer{
     .container{
         padding: 50px 20px;
     }
-    .col-3{
-        flex-basis: 80%;
-        max-width: 80%;
-    }
     
     .experience-banner{
         background-position: bottom left;
@@ -406,17 +425,13 @@ footer{
         margin: 0 5px;
     }
     footer p{
-        font-size: 13px;
+        font-size: 12px;
     }
    
 
 }
 @media (max-width:468px) {
 
-     .col-3{
-        flex-basis: 90%;
-        max-width: 90%;
-    }
     .projects{
         grid-template-columns: repeat(1, 1fr);
     }
