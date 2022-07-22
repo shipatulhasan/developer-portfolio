@@ -6,12 +6,15 @@
 }
 body{
     background: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    /* margin: 0 auto; */
 }
 .container{
-    width: 1200px;
-    max-width: 100%;
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+    
 }
 /* my color */
 :root{
@@ -25,6 +28,7 @@ body{
     --yellow:#ffde59;
     --light-violet:#B09DFF;
     --violet:#562EFF;
+    --coffee:#630E2B;
     
 }
 
@@ -39,6 +43,9 @@ body{
 }
 .violet-bg{
     background-image: linear-gradient(45deg,var(--violet),var(--light-violet));
+}
+.coffee-bg{
+    background-image: linear-gradient(45deg,var(--coffee),var(--light-pink));
 }
 .row{
     display: flex;
@@ -109,6 +116,9 @@ h6{
     font-size: 18px;
     /* letter-spacing: 2px; */
     line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
 }
 
@@ -200,14 +210,22 @@ h2{
 }
 /* projects */
 
-.projects{
+.portfolio{
     background: #f8f8f8 no-repeat url("../img/exp-bg-flip.png");
     background-position: top right;
     /* background-size: contain; */
     padding: 100px 0;
     
 }
-.projects img{
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.projects .card{
+    margin: 0;
+}
+.card img{
     border-radius: 10px;
 }
 .language{
@@ -281,7 +299,7 @@ footer{
     .hero p{
         display: none;
     }
-    .about, .projects, .experience{
+    .about, .portfolio, .experience{
         padding: 0;
     }
     .about-content{
@@ -299,6 +317,9 @@ footer{
         flex-basis: 80%;
         max-width:80%;
 
+    }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
     }
  
 }
@@ -364,6 +385,7 @@ footer{
         flex-basis: 80%;
         max-width: 80%;
     }
+    
     .experience-banner{
         background-position: bottom left;
     }
@@ -373,11 +395,8 @@ footer{
     .about-content p{
         text-align: justify;
         }
-    .projects{
+    .portfolio{
         background-position: bottom right;
-    }
-    .projects .row {
-        justify-content: center;
     }
     .items {
         flex-basis: 22%;
@@ -397,5 +416,8 @@ footer{
      .col-3{
         flex-basis: 90%;
         max-width: 90%;
+    }
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
